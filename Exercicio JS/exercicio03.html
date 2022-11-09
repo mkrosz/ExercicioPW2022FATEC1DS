@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    var collection
+
+// O getElementById() é um metodo qeu como já diz, retorna um elemento com um valor especifico,
+// este é um dos metodos mais usados no HTML DOM. È usado quase sempre quando você deseja ler ou editar um elememento HTML,
+//como mostra no exemplo abaixo:
+    
+document.getElementById("demo");
+
+    const myElement = document.getElementById("demo");
+    myElement.style.color = "red";
+
+//O getElementsByTagName() retorna uma coleção de todos os elementos com um nome de tag especifico, nesse caso todos com a tag "li"
+//Este metodo retorna um "HTML Colection",
+//que é uma coleção(lista) semelhante a um array de elementos HTML, seus elementos podem ser acessados pelo indice que começã em 0.
+//A propiedade lenght retorna o número de elementos na coleção.
+
+   const collection = document.getElementsByTagName("li");
+
+//O getElementsByClassName é um metodo que retorna uma coleção de elementos com um(s) nome(s) de classe especificado(s).
+//Essa propiedade assim como a propiedade getElementsByTagName(), é um metodo que retorna um "HTML Collection",
+//uma propiedade que é também somente leitura. 
+
+   const collection = document.getElementsByClassName("example color").lenght;
+
+//O querySelector()retorna o PRIMEIRO elemento que corresponde a um seletor de CSS.
+//Este metodo retorna uma exceção SYNTAX_ERR caso o seletor for inválido.
+
+    document.querySelector("p");
+
+//O querySelectorAll() metodo que retorna todos os elementos que correspondem a um(s) seletor(es) CSS.
+//Este metodo retorna um "NodeList",
+//e assim como o metodo querrySelector() lança uma exceção SYNTAX_ERR caso o seletor for inválido.
+
+document.querySelectorAll(".example");
+
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+    <script type="text/javascript">
+
+//função nomeada
+
+        nome = "Nome";
+        var idade = 0;
+        let sexo = "Não Identificado";
+
+
+        nome = window.prompt("Digite seu nome:");
+        idade = window.prompt("Digite sua idade:");
+        sexo = window.prompt("Digite seu sexo:");
+
+//função nomeada com parãmetro de retorno
+
+        var feminino = {
+            sexo2: "feminino",
+            showInfo: function () {
+
+            }
+        }
+        
+        function msg (msg) {
+
+//função construtor
+
+            this.msg = msg;
+            return alerta('msg');
+        }
+
+        window.document.write("<p> Nome: " + nome + " Idade: " + idade + " sexo: " + sexo + "</p>");
+        console.log(nome + ", " + idade + ", " + sexo);
+
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+
+//função literal com arrow function
+
+        let hello = "";
+
+        hello = woeld => "Hello " + world;
+
+        console.log(document.getElementById("demo").innerHTML = hello("World!"));
+
+    </script>
+</body>
+
+</html>

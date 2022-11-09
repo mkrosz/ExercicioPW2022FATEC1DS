@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<script>
+    var a = document.getElementById("a");
+
+    a.onmouseover = function (e) {
+        console.clear();
+        console.log(e.target.id);
+    }
+
+    function dentro() {
+        document.getElementById("meuInput").style.background = "red";
+    }
+    function fora() {
+        document.getElementById("meuInput").style.background = "blue";
+    }
+
+    function myFunction() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+
+<body>
+    <p>onmouseover</p>
+    <p>onfocus<input type="text" id="meuInput" onfocus="dentro()" onblur="fora()"></p>
+    <p>Insira seu Nome: <input type="text" id="fname" onchange="myFunction()">
+        <p>
+</body>
+
+</html>
